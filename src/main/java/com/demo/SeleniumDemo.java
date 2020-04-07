@@ -21,6 +21,8 @@ public class SeleniumDemo {
    @Test
     public  void initDriver() throws Exception {
 
+      System.out.println("This is a simple AutoIT demo");
+
        System.setProperty("webdriver.gecko.driver","src/main/resources/geckodriver.exe");
 
        driver = new FirefoxDriver();
@@ -34,7 +36,6 @@ public class SeleniumDemo {
 
        JavascriptExecutor executor = (JavascriptExecutor)driver;
        executor.executeScript("arguments[0].click();", element);
-
 
        Thread.sleep(5000);
 
