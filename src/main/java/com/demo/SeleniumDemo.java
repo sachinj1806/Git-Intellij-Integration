@@ -30,12 +30,6 @@ public class SeleniumDemo {
        Path sampleFile = Paths.get("src/main/resources/uploadDemo.html");
        driver.get(sampleFile.toUri().toString());
 
-      // driver.get("file:///src/main/resources/uploadDemo.html");
-
-       //driver.get();
-
-     // driver.get("file://src/main/resources/uploadDemo.html");
-
        WebElement element=driver.findElement(By.xpath("//input[@type='file']"));
 
        JavascriptExecutor executor = (JavascriptExecutor)driver;
